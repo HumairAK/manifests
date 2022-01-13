@@ -13,23 +13,17 @@ resources:
 
 images:
   - name: gcr.io/ml-pipeline/api-server
-    newName: docker.io/aipipeline/api-server
-    newTag: latest
+    newTag: 1.5.0
   - name: gcr.io/ml-pipeline/persistenceagent
-    newName: docker.io/aipipeline/persistenceagent
-    newTag: latest
+    newTag: 1.5.0
   - name: gcr.io/ml-pipeline/frontend
-    newName: docker.io/aipipeline/frontend
-    newTag: latest
+    newTag: 1.5.0
   - name: gcr.io/ml-pipeline/metadata-writer
-    newName: docker.io/aipipeline/metadata-writer
-    newTag: latest
+    newTag: 1.5.0
   - name: gcr.io/ml-pipeline/scheduledworkflow
-    newName: docker.io/aipipeline/scheduledworkflow
-    newTag: latest
+    newTag: 1.5.0
   - name: gcr.io/ml-pipeline/cache-server
-    newName: docker.io/aipipeline/cache-server
-    newTag: latest
+    newTag: 1.5.0
 
 # Used by Kustomize
 vars:

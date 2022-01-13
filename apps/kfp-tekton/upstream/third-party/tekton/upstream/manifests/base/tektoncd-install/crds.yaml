@@ -8,8 +8,7 @@ spec:
   group: tekton.dev
   preserveUnknownFields: false
   versions:
-    - &version
-      name: v1alpha1
+    - name: v1alpha1
       served: true
       storage: false
       schema:
@@ -27,8 +26,7 @@ spec:
       # starts to increment
       subresources:
         status: {}
-    - !!merge <<: *version
-      name: v1beta1
+    - name: v1beta1
       storage: true
   names:
     kind: ClusterTask
@@ -93,8 +91,7 @@ spec:
   group: tekton.dev
   preserveUnknownFields: false
   versions:
-    - &version
-      name: v1alpha1
+    - name: v1alpha1
       served: true
       storage: false
       # Opt into the status subresource so metadata.generation
@@ -112,8 +109,7 @@ spec:
           # See https://kubernetes.io/blog/2019/06/20/crd-structural-schema/
           # See issue: https://github.com/knative/serving/issues/912
           x-kubernetes-preserve-unknown-fields: true
-    - !!merge <<: *version
-      name: v1beta1
+    - name: v1beta1
       storage: true
   names:
     kind: Pipeline
@@ -142,8 +138,7 @@ spec:
   group: tekton.dev
   preserveUnknownFields: false
   versions:
-    - &version
-      name: v1alpha1
+    - name: v1alpha1
       served: true
       storage: false
       schema:
@@ -174,8 +169,7 @@ spec:
       # starts to increment
       subresources:
         status: {}
-    - !!merge <<: *version
-      name: v1beta1
+    - name: v1beta1
       storage: true
   names:
     kind: PipelineRun
@@ -293,8 +287,7 @@ spec:
   group: tekton.dev
   preserveUnknownFields: false
   versions:
-    - &version
-      name: v1alpha1
+    - name: v1alpha1
       served: true
       storage: false
       schema:
@@ -312,8 +305,7 @@ spec:
       # starts to increment
       subresources:
         status: {}
-    - !!merge <<: *version
-      name: v1beta1
+    - name: v1beta1
       storage: true
   names:
     kind: Task
@@ -342,8 +334,7 @@ spec:
   group: tekton.dev
   preserveUnknownFields: false
   versions:
-    - &version
-      name: v1alpha1
+    - name: v1alpha1
       served: true
       storage: false
       schema:
@@ -374,8 +365,7 @@ spec:
       # starts to increment
       subresources:
         status: {}
-    - !!merge <<: *version
-      name: v1beta1
+    - name: v1beta1
       storage: true
   names:
     kind: TaskRun
