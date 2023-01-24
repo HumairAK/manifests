@@ -12,3 +12,5 @@ spec:
             - name: KUBEFLOW_USERID_HEADER
               value: kubeflow-userid
             - name: KUBEFLOW_USERID_PREFIX
+            - name: ENABLE_AUTHZ
+              value: 'true'
