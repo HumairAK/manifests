@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
 - ../../../../common/oidc-authservice/base
 - ../../../../common/dex/overlays/istio
-- rbac
+#
