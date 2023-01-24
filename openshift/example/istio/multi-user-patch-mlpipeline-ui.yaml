@@ -1,0 +1,14 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: ml-pipeline-ui
+  namespace: kubeflow
+spec:
+  template:
+    spec:
+      containers:
+        - name: ml-pipeline-api-server
+          env:
+            - name: KUBEFLOW_USERID_HEADER
+              value: kubeflow-userid
+            - name: KUBEFLOW_USERID_PREFIX

@@ -1,0 +1,15 @@
+apiVersion: kubeflow.org/v1beta1
+kind: Profile
+metadata:
+  name: example-user
+spec:
+  owner:
+    kind: User
+    name: example-user@example.com  # This should match ocp username i.e. `oc get user example-user@example.com`
+  resourceQuotaSpec:
+    hard:
+      cpu: "4"
+      memory: 8Gi
+      requests.nvidia.com/gpu: "1"
+      persistentvolumeclaims: "1"
+      requests.storage: "5Gi"

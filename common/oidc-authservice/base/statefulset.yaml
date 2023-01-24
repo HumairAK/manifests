@@ -34,8 +34,8 @@ spec:
             httpGet:
               path: /
               port: 8081
-      securityContext:
-        fsGroup: 111
+#      securityContext:
+#        fsGroup: 111
       volumes:
         - name: data
           persistentVolumeClaim:

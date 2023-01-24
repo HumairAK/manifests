@@ -12,6 +12,10 @@ resources:
   - ../../openshiftstack/application/notebook-controller/base
   - ../../openshiftstack/application/volumes-web-app/base
   - ../../openshiftstack/application/training-operator/base
+  - ../../openshiftstack/application/oidc
   - ../../openshiftstack/application/katib/base
   - ../../openshiftstack/application/kserve/base
   - ../../openshiftstack/
+
+patchesStrategicMerge:
+  - multi-user-patch-mlpipeline.yaml
